@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <div>
+      <h4>The first endpoint, POST /orders</h4>
+      <form method="POST" action="http://localhost:3000/orders/">
+        <div>customer</div>
+        <input
+          type="text"
+          id="customer"
+          name="customer"
+          value="customer-1"
+        /><br />
+        <div>title</div>
+        <input type="text" name="title" value="new mobile order" />
+        <div>type</div>
+        <input type="text" name="type" value="iPhone13" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div>
+      <h4>The second endpoint GET /orders/{id}</h4>
+      <a href="http://localhost:3000/orders/1"
+        >http://localhost:3000/orders/1</a
+      >
+    </div>
+    <div>
+      <h4>The third endpoint, GET /orders/{type}/{date}</h4>
+      <a href="http://localhost:3000/orders/iPhone13/20160922"
+        >http://localhost:3000/orders/iPhone13/20160922</a
+      >
+    </div>
+  </body>
+</html>
